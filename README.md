@@ -3,11 +3,10 @@ This is one of the project assignment in Udacity Web Development course. This si
 
 ## File Structure in this project
 
-├──css--style.css
-├──image/
-├── index.html
-├──fresh_tomatoes.py
-└──README.md
+    ├──css--style.css
+    ├──image/
+    ├──index.html
+    └──README.md
 
 ## Copyright:
 Banner image is found through google search, and do not hold the copyright.
