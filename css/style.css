@@ -1,1 +1,230 @@
+/* Protfolio Porject Udacity, 2017
+=================================*/
 
+/* General
+===========*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 2em;
+  font-family: helvetica, sans-serif;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Buttons
+=================== */
+
+.button {
+  display: inline-block;
+  font-size: 1.15rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-width: 2px;
+  border-style: solid;
+  padding: .5em 1.75em;
+}
+
+@media (min-width: 60rem) {
+  .button {
+    font-size: 1.5rem;
+  }
+}
+
+.button-small {
+  font-size: .7rem;
+  font-weight: 700;
+}
+
+.button-accent {
+  color: #02b3e4;
+  border-color: #1bbae6;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+  background: #1bbae6;
+  color: #232323;
+}
+
+.button-dark {
+  color: #232323;
+  border-color: #fff;
+}
+
+.button-dark:hover,
+.button-dark:focus {
+  background: #1bbae6;
+  color: #2d3c49;
+}
+
+
+/* Typography
+===================*/
+.title {
+  font-size: 2.5rem;
+}
+
+.title span {
+  font-weight: 300;
+  display: block;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 60rem) {
+  .title {
+    font-size: 3.7rem;
+  }
+}
+
+
+/* Header
+===================*/
+
+header {
+  border-bottom: .2em solid #7d97ad;
+  padding-bottom: 0;
+  margin-bottom: 2rem;
+}
+
+.header-title {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #2d3c49;
+  text-align: right;
+}
+
+.sub-title {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 100;
+  color: #2d3c49;
+  text-align: right;
+}
+
+@media (min-width: 60rem) {
+  .logo {
+    float: left;
+  }
+}
+
+
+/* Banner
+================== */
+
+.banner {
+  background: url('../img/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 8em 0;
+  text-align: center;
+  color: #fff;
+}
+
+.title {
+  font-size: 3.5rem;
+}
+
+.title span {
+  font-weight: 300;
+  display: block;
+  font-size: .8em;
+}
+
+@media (min-width: 60em) {
+  .banner {
+    height: 60vh;
+    padding-top: 10vh;
+  }
+}
+
+/* Portfolio/Featured Work
+=========================*/
+.portfolio {
+  margin: 3em 0 0;
+}
+
+.featured-title{
+  text-align: left;
+
+}
+
+.work-item {
+  margin: 0;
+  position: relative;
+}
+
+.work-item img {
+  display: block;
+  
+}
+
+.work-desc {
+  position: absolute;
+  z-index: 100;
+  bottom: 0em;
+  left: 0em;
+  right: 0em;
+  color: white;
+  background: rgba(0,0,0,.6);
+  padding-bottom: 2em;
+}
+
+.work-desc p {
+  margin: 1em;
+}
+
+@media (min-width: 37rem) {
+  .work-item {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media (min-width: 60rem) {
+  .work-item {
+    width: 33.3333334%;
+    overflow: hidden;
+  }
+
+  .work-desc {
+    transform: translateY(150%);
+  }
+
+  .work-item:hover .work-desc {
+    transform: translateY(0%);
+  }
+}
+
+/* CTA
+=================== */
+
+.cta {
+  background-color: #02b3e4;
+  padding: 5em 0;
+}
+
+
+/* Footer
+=======================*/
+
+footer {
+  text-align: center;
+  font-size: 1rem;
+  color: #2d3c49;
+  border-top: .2em solid #2d3c49;
+  margin-top: 2em;
+}
